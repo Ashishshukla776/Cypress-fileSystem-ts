@@ -18,7 +18,7 @@ Cypress.Commands.add("postFormData",
   (url, formData, token): Cypress.Chainable<any> => {
     return cy.wrap(
       axios(url, {
-        method: routes.post,
+        method: "POST",
         url: routes.csv_import,
         data: formData,
         headers: {
